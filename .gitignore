@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.next/
+dist/
+build/
+coverage/
+.expo/
+*.log
+prisma/*.db
+.DS_Store
+.vscode/
+.idea/
