@@ -4,7 +4,11 @@
   "description": "",
   "scripts": {
     "test": "echo \"tests will be added per app\"",
-    "dev": "echo \"dev scripts will be added per app\""
+    "dev": "echo \"dev scripts will be added per app\"",
+    "prisma:generate": "prisma generate",
+    "prisma:validate": "prisma validate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,11 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@prisma/client": "^6.19.3"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.3"
+  }
 }
